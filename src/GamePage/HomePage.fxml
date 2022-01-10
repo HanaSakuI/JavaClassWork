@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="homePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="423.0" style="-fx-background-color: #CAFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamePage.HomePageView">
+   <children>
+      <Label layoutX="70.0" layoutY="17.0" prefHeight="90.0" prefWidth="284.0" text="速算游戏">
+         <font>
+            <Font name="FangSong" size="70.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9857142857142858" endY="1.0" startX="0.3285714285714286" startY="0.2666666666666666">
+               <stops>
+                  <Stop color="#982dd7" />
+                  <Stop color="#dd0000" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="76.0" layoutY="162.0" text="用户名：" textFill="#8a0167">
+         <graphic>
+            <TextField fx:id="userName" />
+         </graphic>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="95.0" layoutY="235.0" prefHeight="29.0" prefWidth="234.0" text="难度：" textFill="#8a0167">
+         <graphic>
+            <ComboBox fx:id="comboBox" prefHeight="29.0" prefWidth="170.0" promptText="难度选择" />
+         </graphic>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="star" layoutX="150.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: #FF0000;" text="开始游戏">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ranklist" layoutX="171.0" layoutY="402.0" mnemonicParsing="false" style="-fx-background-radius: 100;" text="排行榜">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="5.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="47.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="86.0" layoutY="403.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="258.0" layoutY="403.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="299.0" layoutY="403.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="98.0" layoutX="342.0" layoutY="403.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

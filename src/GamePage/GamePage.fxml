@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #CAFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamePage.GamePageView">
+   <children>
+      <Label layoutX="356.0" layoutY="22.0" prefHeight="101.0" prefWidth="293.0" text="速算游戏">
+         <font>
+            <Font size="71.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3380952380952381">
+               <stops>
+                  <Stop color="#d31ae4" />
+                  <Stop color="#1444cc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="8.0" layoutY="101.0" text="分数：" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="heart1" fitHeight="43.0" fitWidth="37.0" layoutX="155.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/heart.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart2" fitHeight="43.0" fitWidth="37.0" layoutX="118.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/heart.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart3" fitHeight="43.0" fitWidth="37.0" layoutX="81.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/heart.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart4" fitHeight="43.0" fitWidth="37.0" layoutX="44.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/heart.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart5" fitHeight="43.0" fitWidth="37.0" layoutX="7.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/heart.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="gameNumber" layoutX="81.0" layoutY="102.0" text="0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="999.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="pause" mnemonicParsing="false" text="暂停游戏" />
+                  <MenuItem fx:id="play" mnemonicParsing="false" text="继续游戏" />
+                  <MenuItem fx:id="reStar" mnemonicParsing="false" text="重新开始" />
+              <MenuItem fx:id="back" mnemonicParsing="false" text="返回主页" />
+                  <MenuItem fx:id="ranklist" mnemonicParsing="false" text="排行榜" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="退出游戏" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <TextArea fx:id="textarea" editable="false" prefHeight="156.0" prefWidth="200.0" text="游戏玩法：上方会不断下&#10;落一些计算式，玩家在输&#10;入框中输入计算结果并回&#10;车。如果结果正确，则得&#10;分。若计算式下落至消失，&#10;则玩家失去一点生命值。&#10;生命值为0时，游戏结束！" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextArea>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <TextField editable="false" prefHeight="23.0" prefWidth="184.0" text="本游戏制作：19201323-熊英昊" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+          </Menu>
+            <Menu fx:id="level" mnemonicParsing="false" text="Level：" />
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="169.0" fitWidth="201.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/51f94150874db13332e998d5e9c9b276.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="206.0" layoutX="805.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/05fa28e0de8dd2764a210ed4648fb72a.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="result" layoutX="450.0" layoutY="530.0" text="">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input" alignment="BASELINE_CENTER" layoutX="370.0" layoutY="570.0" prefHeight="41.0" prefWidth="224.0" promptText="输入答案并回车" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Pane fx:id="pane" layoutY="27.0" prefHeight="658.0" prefWidth="1000.0" />
+   </children>
+</Pane>
